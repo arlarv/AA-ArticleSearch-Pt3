@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/action_favorites"
+        android:id="@+id/ArticlesItem"
         android:enabled="true"
         android:icon="@drawable/baseline_article_24"
         android:title="Articles" />
     <item
-        android:id="@+id/action_schedules"
+        android:id="@+id/BooksItem"
         android:enabled="true"
         android:icon="@drawable/baseline_menu_book_24"
         android:title="Books" />
