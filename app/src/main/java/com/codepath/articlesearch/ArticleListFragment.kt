@@ -27,11 +27,6 @@ class ArticleListFragment : Fragment() {
     private lateinit var articlesRecyclerView: RecyclerView
     private lateinit var articleAdapter: ArticleAdapter
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -40,7 +35,7 @@ class ArticleListFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_article_list, container, false)
 
         // Add these configurations for the recyclerView and to configure the adapter
-        val layoutManager = LinearLayoutManager(context)
+        val layoutManager = LinearLayoutManager(requireContext())
         articlesRecyclerView = view.findViewById(R.id.article_recycler_view)
         articlesRecyclerView.layoutManager = layoutManager
         articlesRecyclerView.setHasFixedSize(true)

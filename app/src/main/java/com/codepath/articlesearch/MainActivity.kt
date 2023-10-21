@@ -25,7 +25,6 @@ private const val TAG = "MainActivity/"
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
     private val fragment1: Fragment = ArticleListFragment()
     private val fragment2: Fragment = BestSellerBooksFragment()
 
